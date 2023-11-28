@@ -1,0 +1,14 @@
+[27-11-2023 15:02:42] ERROR: no existe la función registrar_optimizacions(unknown, unknown, unknown, unknown, unknown)
+[27-11-2023 15:03:00] ERROR: no existe la función registrar_optimizacions(unknown, unknown, unknown, unknown, unknown)
+[27-11-2023 16:37:50] ERROR: pool is not a function
+[27-11-2023 17:19:01] ERROR: la sintaxis de entrada no es válida para tipo date: «$1»
+[27-11-2023 17:33:10] ERROR: no existe la función to_date(date, unknown)
+[27-11-2023 17:43:25] ERROR: no existe la función to_char(date, unknown, unknown)
+[27-11-2023 17:44:32] ERROR: no existe la función to_char(date, unknown, unknown)
+[27-11-2023 17:45:44] ERROR: no existe la función to_char(date, unknown, unknown)
+[27-11-2023 18:04:12] ERROR: la sintaxis de entrada no es válida para tipo date: «$1»
+[27-11-2023 18:15:10] ERROR: error de sintaxis en o cerca de «group»
+[27-11-2023 18:15:21] ERROR: la columna «c.cuenta» debe aparecer en la cláusula GROUP BY o ser usada en una función de agregación
+[28-11-2023 13:02:08] ERROR: error de sintaxis en o cerca de «order»
+[28-11-2023 13:02:58] ERROR: error de sintaxis en o cerca de «order»
+[28-11-2023 13:04:39] ERROR: no hay parámetro $1
