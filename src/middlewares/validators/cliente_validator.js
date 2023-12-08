@@ -116,6 +116,24 @@ async function registrarClienteVal(req) {
                     'number.base': `{{#label}} debe ser un numero`,
                     'any.required': `"{{#label}}" es obligatorio`,
                 }),
+            recursos_productivos: Joi.number()
+                .required()
+                .messages({
+                    'number.base': `{{#label}} debe ser un numero`,
+                    'any.required': `"{{#label}}" es obligatorio`,
+                }),
+            recursos_pruebas: Joi.number()
+            .required()
+            .messages({
+                'number.base': `{{#label}} debe ser un numero`,
+                'any.required': `"{{#label}}" es obligatorio`,
+            }),
+            fk_tipo_conteo: Joi.number()
+            .required()
+            .messages({
+                'number.base': `{{#label}} debe ser un numero`,
+                'any.required': `"{{#label}}" es obligatorio`,
+            }),
         });
         return await schema.validateAsync(req.body, options);
     } catch (error) {

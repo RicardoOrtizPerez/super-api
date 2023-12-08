@@ -39,8 +39,21 @@ const registrarCliente = async(req, res) => {
             })
         }
 
-        const { empresa, cuenta, its_token, toursolver_key, estatus, correo_contacto, simulaciones_productivas, simulaciones_pruebas } = req.body;
-        const response = await pool.query('select registrar_cliente($1,$2,$3,$4,$5,$6,$7,$8) as result',[empresa, cuenta,its_token,toursolver_key,estatus,correo_contacto,simulaciones_productivas, simulaciones_pruebas]);
+        const { empresa, cuenta, its_token, toursolver_key, estatus, correo_contacto, simulaciones_productivas, simulaciones_pruebas,recursos_productivos, recursos_pruebas, fk_tipo_conteo } = req.body;
+        const response = await pool.query('select registrar_cliente($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11) as result',
+        [
+            empresa, 
+            cuenta,
+            its_token,
+            toursolver_key,
+            estatus,
+            correo_contacto,
+            simulaciones_productivas,
+            simulaciones_pruebas,
+            recursos_productivos,
+            recursos_pruebas,
+            fk_tipo_conteo
+        ]);
         
         if (response.rows[0].result == 'SUCCESS') {
             res.status(200).json({

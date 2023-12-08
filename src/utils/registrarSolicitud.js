@@ -1,15 +1,11 @@
 const pool = require("../config/db");
 const { escribirErrorEnLog } = require("./generarArchivoLog");
 
-const registrarSolicitudParaUsuario = async(token) => {
+const registrarSolicitudParaUsuario = async(token, entorno, recursos = 0) => {
     try {
         const ahora = new Date();
 
-        await pool.query(`
-        UPDATE clientes SET 
-        simulaciones_hoy_productivas = simulaciones_hoy_productivas + 1,
-        fecha_ultima_actualizacion = $2
-        WHERE its_token = $1 RETURNING simulaciones_hoy_productivas`,[token, ahora]);
+        await pool.query(`select registrarSolicitudCliente($1,$2,$3)`,[token, entorno, recursos]);
 
     } catch (error) {
         escribirErrorEnLog(error.message);

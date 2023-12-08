@@ -1,11 +1,12 @@
 const pool = require("../config/db");
 const { escribirErrorEnLog } = require('./generarArchivoLog');
 
-const obtenerLimiteDiarioParaUsuario = async(token) => {
+const obtenerLimiteDiarioParaUsuario = async(token, entorno) => {
     try {
-        if (token) {
-            const cliente = await pool.query(`select simulaciones_productivas from clientes where its_token = $1`,[token]);
-            return cliente.rows[0].simulaciones_productivas;
+        if (token && entorno) {
+            const cliente = await pool.query(`select obtenerLimiteCliente($1,$2) as simulaciones`,[token, entorno]);
+            // console.log(cliente.rows[0].simulaciones)
+            return cliente.rows[0].simulaciones;
         }
         return 0; // sin token no existe limite diario 
     } catch (error) {

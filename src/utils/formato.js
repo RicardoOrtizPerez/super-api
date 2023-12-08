@@ -2,7 +2,7 @@ const obtenerFormatoFecha = (fecha = new Date()) => {
     const dia = agregarCeroAlInicio(fecha.getDate());
     const mes = agregarCeroAlInicio(fecha.getMonth() + 1);
     const anio = fecha.getFullYear();
-    return `${dia}-${mes}-${anio}`;
+    return `${anio}-${mes}-${dia}`;
 }
 
 const agregarCeroAlInicio = (numero) => {

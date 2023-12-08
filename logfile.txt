@@ -12,3 +12,56 @@
 [28-11-2023 13:02:08] ERROR: error de sintaxis en o cerca de «order»
 [28-11-2023 13:02:58] ERROR: error de sintaxis en o cerca de «order»
 [28-11-2023 13:04:39] ERROR: no hay parámetro $1
+[28-11-2023 16:20:46] ERROR: read ECONNRESET
+[01-12-2023 17:56:54] ERROR: error de sintaxis en o cerca de «from»
+[01-12-2023 17:57:01] ERROR: no existe la columna o.recursos
+[01-12-2023 18:59:43] ERROR: error de sintaxis en o cerca de «=»
+[01-12-2023 19:00:13] ERROR: error de sintaxis en o cerca de «=»
+[01-12-2023 19:00:17] ERROR: error de sintaxis en o cerca de «=»
+[04-12-2023 18:07:25] ERROR: no existe la columna «recursos_dia_hoy»
+[04-12-2023 18:08:05] ERROR: no existe la columna «recursos_dia_hoy»
+[04-12-2023 18:08:53] ERROR: no existe la columna «recursos_dia_hoy»
+[04-12-2023 18:09:29] ERROR: no existe la columna «recursos_dia_hoy»
+[04-12-2023 18:09:38] ERROR: no existe la columna «recursos_dia_hoy»
+[04-12-2023 18:53:40] ERROR: la sintaxis de entrada no es válida para tipo integer: «productivo»
+[04-12-2023 18:53:46] ERROR: la sintaxis de entrada no es válida para tipo integer: «productivo»
+[04-12-2023 18:54:36] ERROR: la sintaxis de entrada no es válida para tipo integer: «pruebas»
+[04-12-2023 18:57:45] ERROR: no existe la relación «cliente»
+[04-12-2023 19:15:00] ERROR: error de sintaxis en o cerca de «from»
+[07-12-2023 11:12:50] ERROR: No de pudo enviar el correo electronico
+[07-12-2023 11:15:08] ERROR: Cannot read properties of undefined (reading 'ok')
+[07-12-2023 11:15:47] ERROR: Cannot read properties of undefined (reading 'ok')
+[07-12-2023 11:16:14] ERROR: Cannot read properties of undefined (reading 'ok')
+[07-12-2023 11:17:15] ERROR: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials x12-20020a05680801cc00b003b9ccc75725sm24926oic.13 - gsmtp
+[07-12-2023 11:20:12] ERROR: connect ETIMEDOUT 187.190.161.55:2222
+[07-12-2023 11:20:40] ERROR: connect ETIMEDOUT 187.190.161.55:2222
+[07-12-2023 11:22:42] ERROR: Hostname/IP does not match certificate's altnames: Host: smtp.itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[07-12-2023 11:26:34] ERROR: Greeting never received
+[07-12-2023 11:27:50] ERROR: Greeting never received
+[07-12-2023 11:29:25] ERROR: getaddrinfo ENOTFOUND 187.190.161.55/
+[07-12-2023 11:29:58] ERROR: connect ETIMEDOUT 187.190.161.55:2222
+[07-12-2023 11:30:57] ERROR: Greeting never received
+[07-12-2023 11:37:05] ERROR: Greeting never received
+[07-12-2023 11:37:45] ERROR: Greeting never received
+[07-12-2023 11:56:08] ERROR: Greeting never received
+[07-12-2023 11:57:36] ERROR: Greeting never received
+[07-12-2023 11:58:30] ERROR: connect ETIMEDOUT 187.190.161.55:2222
+[07-12-2023 13:50:26] ERROR: Greeting never received
+[07-12-2023 14:14:49] ERROR: No de pudo enviar el correo electronico: undefined
+[07-12-2023 16:50:25] ERROR: No de pudo enviar el correo electronico: undefined
+[07-12-2023 16:55:23] ERROR: connect ETIMEDOUT 174.136.30.87:587
+[07-12-2023 16:56:32] ERROR: connect ETIMEDOUT 174.136.30.87:25
+[07-12-2023 16:57:12] ERROR: connect ETIMEDOUT 174.136.30.87:25
+[07-12-2023 17:02:05] ERROR: connect ETIMEDOUT 174.136.30.87:25
+[07-12-2023 17:02:58] ERROR: connect ETIMEDOUT 174.136.30.87:465
+[07-12-2023 17:04:10] ERROR: connect ETIMEDOUT 174.136.30.87:465
+[07-12-2023 17:04:24] ERROR: getaddrinfo ENOTFOUND itsmarts.com.mx:2222
+[07-12-2023 17:04:40] ERROR: Hostname/IP does not match certificate's altnames: Host: itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[07-12-2023 17:05:08] ERROR: Hostname/IP does not match certificate's altnames: Host: smtp.itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[07-12-2023 17:05:30] ERROR: Hostname/IP does not match certificate's altnames: Host: smtp.itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[07-12-2023 17:05:55] ERROR: Hostname/IP does not match certificate's altnames: Host: itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[07-12-2023 17:06:13] ERROR: Hostname/IP does not match certificate's altnames: Host: itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[07-12-2023 17:06:51] ERROR: Hostname/IP does not match certificate's altnames: Host: smtp.itsmarts.com.mx. is not in the cert's altnames: DNS:svdb051.serverneubox.com.mx
+[08-12-2023 11:16:12] ERROR: ENOENT: no such file or directory, open 'C:\Users\cueta\Documents\GitHub\super-api-itsmarts\assets\nomadia.png'
+[08-12-2023 11:17:15] ERROR: ENOENT: no such file or directory, open 'C:\Users\cueta\Documents\GitHub\super-api-itsmarts\assets\nomadia.png'

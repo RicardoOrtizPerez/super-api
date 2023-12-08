@@ -6,6 +6,7 @@ const API = process.env.TOURSOLVER_URI;
 const optimize = async(req, res, next) => {
     try {
         const { body } = req;
+        let recursos = 0, visitas = 0;
         let complete_endpoint = '';
         let headers = {
             'Accept': 'application/json',
@@ -13,10 +14,15 @@ const optimize = async(req, res, next) => {
         }
         complete_endpoint = API + '/optimize';
 
+        recursos = body.resources.length;
+        visitas = body.orders.length;
+
         await axios.post(complete_endpoint, body, { headers: headers}).then((response) => {
             res.status(response.status).send(response.data);
             res.locals.customData = response.data;
             res.locals.customData.ts_key = req.ts_key;
+            res.locals.customData.recursos = recursos;
+            res.locals.customData.visitas = visitas;
         });
 
         next();

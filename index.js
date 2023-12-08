@@ -1,9 +1,10 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const dotenv = require('dotenv');
-dotenv.config();
+const cronApp = require('./src/cron/cron');
 // const pool = require('./src/config/db');
 const { rateLimitMiddleware, accesoMiddleware } = require('./src/middlewares/rateLimitMiddleware');
 
@@ -13,6 +14,7 @@ const auth_routes = require('./src/routes/auth_routes');
 const cliente_routes = require('./src/routes/cliente_routes');
 const toursolver_routes = require('./src/routes/toursolver_routes');
 const dashboard_routes = require('./src/routes/dashboard_routes');
+const email_routes = require('./src/routes/email_routes');
 const verificarToken = require('./src/middlewares/authMiddleware');
 
 const port = process.env.PORT || 3000;
@@ -33,6 +35,7 @@ app.use('/clientes', verificarToken, cliente_routes);
 app.use('/dashboard', verificarToken, dashboard_routes);
 // integracion de api de toursolver
 app.use('/toursolver',accesoMiddleware, toursolver_routes);
+app.use('/email', email_routes);
 
 // crear servidor
 const server = http.createServer(app);
@@ -40,4 +43,6 @@ const server = http.createServer(app);
 // lanzar servidor
 server.listen(port, () => {
     console.log(`Server running on port: ${port}`);
-})
+});
+
+cronApp.iniciarCron();

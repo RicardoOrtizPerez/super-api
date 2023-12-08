@@ -1,0 +1,45 @@
+```
+└── 📁super-api-itsmarts
+    └── .env
+    └── CHANGELOG.md
+    └── database.sql
+    └── index.js
+    └── logfile.txt
+    └── package-lock.json
+    └── package.json
+    └── 📁public
+        └── index.html
+    └── 📁src
+        └── 📁assets
+            └── itsmarts.png
+            └── nomadia.png
+        └── 📁config
+            └── db.js
+        └── 📁controllers
+            └── auth_controller.js
+            └── cliente_controller.js
+            └── dashboard_controller.js
+            └── email_controller.js
+            └── licencia_controller.js
+            └── toursolver_controller.js
+        └── 📁cron
+            └── cron.js
+        └── 📁middlewares
+            └── authMiddleware.js
+            └── rateLimitMiddleware.js
+            └── 📁validators
+                └── cliente_validator.js
+        └── 📁utils
+            └── email.js
+            └── formato.js
+            └── generarArchivoLog.js
+            └── generarToken.js
+            └── limiteDiario.js
+            └── notificaciones.js
+            └── obtenerKeyToursolver.js
+            └── registrarOptimizacion.js
+            └── registrarSolicitud.js
+            └── resetContadores.js
+            └── solicitudesHoy.js
+            └── validacion.js
+```
